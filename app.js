@@ -21,3 +21,8 @@ form.addEventListener("submit", e => {                           //2: makign a c
 result.querySelector("span").textContent = `${score}%`;                  // it grabs the result and aims to th espan and replace it with the score  
 result.classList.remove("d-none");                                       // this basically grabs the result and removes the  display none from the DOM . 
 })
+
+// window object (global object)
+// setTimeout(()=>{
+// alert("take your time answering the questions!");                         // will wait 3 seconds and perform this function  
+// }, 3000);                                    
