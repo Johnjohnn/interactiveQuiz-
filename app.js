@@ -1,5 +1,6 @@
-const correctAnswers = ["B", "B" , "B" , "B"];                   //1: making an array that will point to the B  answers 
+const correctAnswers = ["A", "B" , "B" , "A"];                   //1: making an array that will point to the B  answers 
 const form = document.querySelector(".quiz-form");
+const result = document.querySelector(".result");
 
 form.addEventListener("submit", e => {                           //2: makign a callback function that will add an event listner that will listen to when the user clicks 
     e.preventDefault();
@@ -15,4 +16,8 @@ form.addEventListener("submit", e => {                           //2: makign a c
      }  
     })  
     console.log(score);      
+
+// show result on the page 
+result.querySelector("span").textContent = `${score}%`;                  // it grabs the result and aims to th espan and replace it with the score  
+result.classList.remove("d-none");                                       // this basically grabs the result and removes the  display none from the DOM . 
 })
